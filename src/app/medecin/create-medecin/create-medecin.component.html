@@ -1,0 +1,35 @@
+<div class="container">
+    <h2 align="center">Ajouter nouveau médecin </h2>
+    <br>
+    <form (ngSubmit)="onSubmit()">
+  
+              <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" class="form-control" 
+                required [(ngModel)]="medecin.nom"
+                              id="nom" placeholder="Enter Nom" name="nom">
+              </div>
+  
+              <div class="form-group">
+                <label for="prenom">Prenom :</label>
+                <input type="text" class="form-control"  id="prenom" 
+                required [(ngModel)]="medecin.prenom"
+                 placeholder="Enter Prenom" name="prenom">
+              </div>
+
+              <div class="form-group">
+                <label for="prenom"> Spécialité :</label>
+                <select type="text" class="form-control"  id="specialite" 
+                required [(ngModel)]="medecin.specialite"
+                name="specialite">
+                <option value="Spec 1">Spec 1</option>
+                <option value="Spec 2">Spec 2</option>
+                <option value="Spec 3">Spec 3</option>
+
+                </select>
+              </div>
+  <br>
+  
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  

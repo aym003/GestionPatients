@@ -1,0 +1,25 @@
+<p>create-client works!</p>
+
+<div class="container">
+    <h2 align="center">Ajouter nouveau client </h2>
+    <br>
+    <form (ngSubmit)="onSubmit()">
+  
+              <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" class="form-control" 
+                required [(ngModel)]="client.nom"
+                              id="nom" placeholder="Enter Nom" name="nom">
+              </div>
+  
+              <div class="form-group">
+                <label for="prenom">Prenom :</label>
+                <input type="text" class="form-control"  id="prenom" 
+                required [(ngModel)]="client.prenom"
+                 placeholder="Enter Prenom" name="prenom">
+              </div>
+  <br>
+  
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  
